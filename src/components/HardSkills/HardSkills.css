@@ -1,0 +1,55 @@
+.thirdsection {
+    max-width: 80vw;
+    margin: auto;
+    height: 400px;
+  }
+  
+  .thirdsection h1 {
+    font-size: 1.9rem;
+  }
+  .thirdsection .box {
+    background-color: aliceblue;
+    width: 80vw;
+    height: 2px;
+    margin: 56px 0;
+    display: flex;
+  }
+  
+  .thirdsection .vertical {
+    height: 93px;
+    width: 1px;
+    background-color: aliceblue;
+    margin: 0 140px;
+  }
+  
+  .verticaltitle {
+    position: relative;
+    top: 55px;
+    width: 150px;
+    font-size: 18px;
+  
+  }
+  .verticaldesc strong {
+    display: block;
+    margin-top: 10px;
+    font-weight: 600;
+    color: grey;
+    font-size: 18px;
+  }
+  
+  .verticaldesc {
+    position: relative;
+    top: 84px;
+    color: grey;
+    width: 150px;
+    font-size: 15px;
+  
+  }
+  
+  .imagetop {
+    width: 53px;
+    position: relative;
+    top: -62px;
+    left: 9px;
+  }
+    

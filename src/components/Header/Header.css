@@ -1,0 +1,119 @@
+/* Default Navigation Bar */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: rgb(35, 35, 78);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 23px;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+nav ul a:hover {
+  color: rgb(183, 215, 243);
+  cursor: pointer;
+}
+
+.left {
+  font-size: 28px;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+  padding: 30px;
+}
+
+/* Hamburger Icon (3 lines) */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+}
+
+.hamburger div {
+  width: 100%;
+  height: 3px;
+  background-color: aliceblue;
+}
+
+/* Media Query for Screens Smaller than 768px */
+@media (max-width: 768px) {
+  nav {
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+
+  .left {
+    font-size: 24px;
+  }
+
+  nav ul {
+    display: none; /* Initially hide the navbar items */
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    position: absolute;
+    top: 80px; /* Position below the navbar */
+    left: 0;
+    background-color: rgb(35, 35, 78);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  nav ul a {
+    font-size: 16px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+/* Media Query for Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+  nav {
+    height: 70px;
+  }
+
+  .left {
+    font-size: 22px;
+  }
+
+  nav ul li {
+    margin: 8px 0;
+  }
+
+  nav ul a {
+    font-size: 14px;
+  }
+}
+
+/* Show the menu when active */
+nav .right.active ul {
+  display: flex;
+}

@@ -1,0 +1,141 @@
+footer {
+  background-color: rgba(1, 1, 18, 0.6);
+  color: #f0f0f0;
+  padding: 40px 0 20px 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  flex: 1;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.footer-left h3 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.footer-left p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-links li {
+  display: inline;
+}
+
+.social-links a {
+  color: #f0f0f0;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #1DA1F2;
+}
+
+.footer-contact p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #cccccc;
+}
+
+.footer-contact a {
+  color: #f0f0f0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-contact a:hover {
+  color: #1DA1F2;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #555;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+  color: #cccccc;
+}
+
+.github-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: rgb(190, 204, 215);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.github-link:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Responsive Styling ---------- */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    margin-bottom: 20px;
+  }
+
+  .social-links {
+    gap: 15px;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+  .footer-left h3 {
+    font-size: 20px;
+  }
+
+  .footer-left p,
+  .footer-contact p,
+  .footer-bottom p {
+    font-size: 14px;
+  }
+
+  .social-links a {
+    font-size: 20px;
+  }
+
+  .github-link {
+    font-size: 14px;
+  }
+}

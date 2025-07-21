@@ -1,0 +1,170 @@
+#certificates {
+  background-color: rgb(3, 3, 50);
+  color: aliceblue;
+  padding: 2rem;
+  border-radius: 8px;
+  margin: 2rem auto;
+  max-width: 90%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+#certificates h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  color: rgb(161, 115, 204);
+  margin-bottom: 0.2rem;
+  text-align: left;
+}
+
+.ac {
+  margin-bottom: 1rem;
+}
+
+.ac h2 {
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
+  color: rgb(161, 115, 204);
+}
+
+.ac p {
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  color: rgb(227, 206, 247);
+  margin-bottom: 1.5rem;
+}
+
+.cert {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+/* Smaller, clickable certificate cards */
+.certificate-card {
+  background-color: rgb(35, 35, 78);
+  color: rgb(188, 209, 227);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 0.8rem;
+  margin: 1rem auto;
+  max-width: 260px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.certificate-card h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+}
+
+.certificate-card p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  margin-bottom: 0.6rem;
+}
+
+/* Description below org line */
+.certificate-card .desc {
+  font-size: 0.85rem;
+  margin-top: 0.3rem;
+  color: rgb(199, 210, 255);
+}
+
+.certificate-card img {
+  width: 100%;
+  max-width: 180px;
+  border-radius: 8px;
+  margin-top: 0.6rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Popup overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(8, 8, 37, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* Popup content */
+.popup-content {
+  position: relative;
+  background: rgb(35, 35, 78);
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  max-width: 90%;
+  max-height: 90%;
+  overflow: auto;
+}
+
+.popup-image {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .certificate-card {
+    max-width: 90%;
+    padding: 1rem;
+  }
+
+  .cert {
+    gap: 1rem;
+  }
+
+  .certificate-card img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  #certificates {
+    padding: 1.5rem;
+  }
+
+  .ac h2 {
+    font-size: 1.5rem;
+  }
+
+  .ac p {
+    font-size: 0.9rem;
+  }
+
+  .certificate-card h3 {
+    font-size: 1rem;
+  }
+
+  .certificate-card p,
+  .certificate-card .desc {
+    font-size: 0.85rem;
+  }
+
+  .popup-content {
+    padding: 0.8rem;
+  }
+
+  .popup-image {
+    max-width: 100%;
+  }
+}

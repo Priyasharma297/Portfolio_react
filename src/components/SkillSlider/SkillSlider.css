@@ -1,0 +1,134 @@
+/* SkillSlider.css */
+.skill-container {
+    background-color: black;
+    color: white;
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(3, 3, 50);
+}
+
+.h1 {
+    font-size: smaller;
+}
+
+.skill-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: rgb(161, 115, 204);
+}
+
+.skill-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 600px;
+    width: 100%;
+}
+
+.arrow-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 10;
+}
+
+.arrow-btn:first-of-type {
+    left: 250px;
+}
+
+.arrow-btn:last-of-type {
+    right: 250px;
+}
+
+
+.slider-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    max-width: 500px;
+    width: 100%;
+}
+
+.skill-card-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-card {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-label {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .skill-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.2rem;
+    }
+
+    .arrow-btn:first-of-type {
+        left: 10px;
+    }
+
+    .arrow-btn:last-of-type {
+        right: 10px;
+    }
+}
+
+/* 1 per row on tiny screens */
+@media (max-width: 480px) {
+    .skill-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .arrow-btn {
+        font-size: 1.25rem;
+        padding: 0.25rem;
+    }
+
+    .arrow-btn:first-of-type {
+        left: 5px;
+    }
+
+    .arrow-btn:last-of-type {
+        right: 5px;
+    }
+}
