@@ -1,4 +1,3 @@
-/* SkillSlider.css */
 .skill-container {
     background-color: black;
     color: white;
@@ -28,11 +27,12 @@
 }
 
 .slider {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    max-width: 600px;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 600px;
+  width: 100%;
+  align-items: center; 
 }
 
 .arrow-btn {
@@ -58,11 +58,12 @@
 
 
 .slider-wrapper {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 150px; 
 }
 
 .skill-grid {

@@ -4,7 +4,6 @@ import Home from './components/Home/Home'
 import About from './components/About/About'
 import Education from './components/Education/Education'
 import SkillSlider from './components/SkillSlider/SkillSlider'
-import HardSkills from './components/HardSkills/HardSkills'
 import CertificatesSection from './components/CertificatesSection/CertificatesSection'
 import ProjectsSection from './components/ProjectsSection/ProjectsSection'
 import ContactSection from './components/ContactSection/ContactSection'
@@ -19,7 +18,6 @@ function App() {
         <About/>
         <Education/>
         <SkillSlider/>
-        {/* <HardSkills/> */}
         <CertificatesSection/>
         <ProjectsSection/>
         <ContactSection/>

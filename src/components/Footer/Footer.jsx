@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="footer-left">
           <h3>Priya Sharma</h3>
           <p style={{ color: 'slategray' }}>Full Stack Developer</p>
-          <p style={{ color: 'slategray' }}>Portfolio</p>
+          <p style={{ color: 'slategray' }}>PORTFOLIO</p>
         </div>
         <div className="footer-center">
           <ul className="social-links">
@@ -20,7 +20,7 @@ const Footer = () => {
         <div className="footer-right">
           <div className="footer-contact">
             <p>Email: <a href="mailto:priyasharma297g@gmail.com">priyasharma297g@gmail.com</a></p>
-            <p>Phone: **********</p>
+            <p>Phone: +91 1256789654</p>
           </div>
         </div>
       </div>

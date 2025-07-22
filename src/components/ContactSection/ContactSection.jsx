@@ -4,10 +4,10 @@ import './ContactSection.css'
 const ContactSection = () => {
   const contactItems = [
     {
-      link: 'tel:************',
+      link: 'tel:1256789654',
       imageSrc: 'images/phone.png',
       altText: 'Phone Icon',
-      contactInfo: '**********',
+      contactInfo: '+91 1256789654',
     },
     {
       link: 'mailto:priyasharma297g@gmail.com',
@@ -25,7 +25,7 @@ const ContactSection = () => {
 
   return (
     <section id="contact" className="contact-section">
-      <br /><br /><br />
+      
       <h1 style={{ color: 'rgb(161, 115, 204)' }}>Contact</h1>
       <span className="textgrey">Feel free to reach out to me!</span>
       <br /><br /><br />

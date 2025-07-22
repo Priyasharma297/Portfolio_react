@@ -10,10 +10,10 @@ const Home = () => {
       strings: ['Student', 'Web Developer', 'Web Designer'],
       typeSpeed: 40,
     };
-    // Initialize Typed.js when the component mounts
+    
     const typed = new Typed('#element', options);
 
-    // Cleanup Typed.js instance when component unmounts
+    
     return () => {
       typed.destroy();
     };
