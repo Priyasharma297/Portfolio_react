@@ -10,7 +10,7 @@ const ProjectsSection = () => {
     {
       imageSrc: 'images/bucket.jpg',
       projectName: 'BucketList Tracker',
-      description: `BucketList Tracker is a dynamic web application that empowers users to create, manage, and share their travel goals through personalized bucket lists. Users can upload images, write stories, and track progress, making each journey more meaningful. The platform features secure user authentication using JSON Web Tokens (JWT) and integrates the Gemini itinerary planner to generate AI-powered travel plans based on user preferences. Image uploads are handled efficiently using Cloudinary, ensuring fast and optimized media delivery. The application is fully deployed, offering a seamless and interactive experience for users worldwide.`,
+      description: `Enables users to create and share travel goals via personalized bucket lists with image uploads and stories. Features secure JWT-based authentication, AI-powered itinerary planning using Gemini, and optimized image delivery through Cloudinary. Fully deployed for a seamless global user experience.`,
       frontend: 'Frontend: HTML, CSS, JavaScript, Handlebars (HBS)',
       backend: 'Backend: Node.js, Express.js, MongoDB, JWT, Gemini API',
       githubLink: 'https://github.com/Priyasharma297/Bucket',

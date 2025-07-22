@@ -44,10 +44,12 @@
   font-size: 0.99em;
   color: slategrey;
 }
+@media (min-width: 769px) {
+  .education-item:hover {
+    transform: scale(1.03);
+  }
+}
 
-/* ---------- Responsive Styling ---------- */
-
-/* Tablet and smaller */
 @media (max-width: 768px) {
   .education-item {
     flex-direction: column;
